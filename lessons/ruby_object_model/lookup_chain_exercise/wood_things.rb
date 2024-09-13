@@ -1,7 +1,7 @@
 class WoodThings
 
-  def soft
-    "superclass's superclass"
-  end
+  # def soft
+  #   "superclass's superclass"
+  # end
 
 end

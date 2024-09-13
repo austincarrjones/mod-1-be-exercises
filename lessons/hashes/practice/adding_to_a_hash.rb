@@ -5,6 +5,7 @@ suitcase = {
 
 # How can we add the following key/value pairs:
 # 1. jackets/2
+# suitcase[:jackets] = 2
 # 2. shirts/4
 # 3. shoes/2
 

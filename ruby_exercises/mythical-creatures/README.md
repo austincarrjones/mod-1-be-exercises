@@ -26,14 +26,14 @@ Continue to follow the errors that your test provides until the test passes. The
 
 ## Suggested Order
 
-* `unicorn_spec.rb` [video walk-through](https://youtu.be/mocwGsu41yw) (watch this first)
-* `vampire_spec.rb`
-* `dragon_spec.rb` [video walk-through](https://youtu.be/NIPerY-xuCk)
-* `hobbit_spec.rb` [video walk-through](https://youtu.be/uYGS-DCNR-0)
-* `pirate_spec.rb`
-* `wizard_spec.rb`
-* `medusa_spec.rb`
-* `werewolf_spec.rb`
+done * `unicorn_spec.rb` [video walk-through](https://youtu.be/mocwGsu41yw) (watch this first)
+done * `vampire_spec.rb`
+done * `dragon_spec.rb` [video walk-through](https://youtu.be/NIPerY-xuCk)
+done * `hobbit_spec.rb` [video walk-through](https://youtu.be/uYGS-DCNR-0)
+done * `pirate_spec.rb`
+done * `wizard_spec.rb` 
+done * `medusa_spec.rb`
+* `werewolf_spec.rb` - half done
 * `centaur_spec.rb`
 * `ogre_spec.rb`
 * `direwolf_spec.rb`

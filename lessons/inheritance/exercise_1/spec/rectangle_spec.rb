@@ -1,4 +1,5 @@
 require "./lib/rectangle"
+require "./lib/shape"
 
 #Unskip the tests one-by-one, then edit the Rectangle class so that each test passes.
 RSpec.describe Rectangle do

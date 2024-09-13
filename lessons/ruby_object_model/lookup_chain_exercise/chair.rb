@@ -10,9 +10,9 @@ include FurnitureModule
   end
 
   def chair_type
-    short = "variable"
+    # short = "variable"
     puts short
-    puts soft
+    # puts soft
   end
 
   def short

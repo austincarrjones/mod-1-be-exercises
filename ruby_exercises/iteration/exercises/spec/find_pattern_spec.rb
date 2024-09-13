@@ -30,33 +30,37 @@ RSpec.describe 'find pattern' do
     expect(first_younger_than_thirty).to eq(:ladonna)
   end
 
-  xit 'test 3' do
+  it 'test 3' do
     ages = [39, 45, 29, 24, 50]
     first_older_than_fifty = nil
     ages.each do |age|
-      # Your Code Here
+      if age > 50
+        first_older_than_thirty = age
+        break
+      end
     end
 
     expect(first_older_than_fifty).to be_nil
   end
 
-  xit 'test 4' do
+  it 'test 4' do
     ages = {
       abdi: 39,
       hassan: 45,
       ladonna: 29,
-      margaret: 24,
+      margaret: 54,
       miguel: 50
     }
-    first_older_than_fifty = nil
-    ages.each do |name, age|
-      # Your Code Here
+    first_older_than_fifty = []
+    over_fifty = ages.find do |name, age|
+      age > 50
     end
+    first_older_than_fifty << over_fifty[0]
 
-    expect(first_older_than_fifty).to be_nil
+    expect(first_older_than_fifty).to eq [:margaret]
   end
 
-  xit 'test 5' do
+  it 'test 5' do
     ages = [39, 45, 29, 24, 50]
     first_multiple_of_three = nil
     # Your Code Here

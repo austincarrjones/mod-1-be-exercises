@@ -1,4 +1,5 @@
 require './lib/hippogriff'
+require 'pry'
 
 RSpec.describe Hippogriff do
   it "has a name" do
@@ -27,7 +28,6 @@ RSpec.describe Hippogriff do
 
   it "when created its sack is empty" do
     hippogriff = Hippogriff.new("jane", :magenta)
-
     expect(hippogriff.moonrocks).to eq([])
   end
 

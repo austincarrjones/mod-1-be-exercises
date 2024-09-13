@@ -31,3 +31,14 @@ kardashians << Person.new("Kim", 41, ["North", "Saint", "Chicago", "Psalm"])
 kardashians << Person.new("Kris", 65, ["Kourtney", "Kim", "Khloe", "Rob", "Kendall", "Kylie"])
 kardashians << Person.new("Khloe", 37, ["True"])
 
+#Age
+oldest = kardashians.max_by do |person|
+  person.age
+end
+puts oldest.name
+
+youngest = kardashians.min_by do |person|
+  person.age
+end
+puts youngest.name
+

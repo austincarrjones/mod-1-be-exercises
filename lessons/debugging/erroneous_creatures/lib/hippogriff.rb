@@ -4,6 +4,7 @@ class Hippogriff
   attr_accessor :moonrocks
 
   def initialize(name, color)
+    binding.pry
     @name = name
     @color = color
     moonrocks = []

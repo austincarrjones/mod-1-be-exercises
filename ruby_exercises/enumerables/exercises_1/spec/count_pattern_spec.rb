@@ -13,7 +13,7 @@ RSpec.describe 'Count Pattern Test' do
     numbers = [9, 18, 12, 17, 1, 3, 99]
     tally = 0
     numbers.each do |number|
-      # Your code goes here
+      number.
     end
     expect(tally).to eq(2)
   end

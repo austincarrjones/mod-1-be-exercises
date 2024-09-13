@@ -86,13 +86,13 @@ require 'pry'
 
 ## Example 14
 
-# numbers = [1, 2, 3]
-# total = 0
-# numbers.each do |number|
-#   total += number
-# end
+numbers = [1, 2, 3]
+total = 0
+numbers.each do |number|
+  total += number
+end
 
-# p total
+p total
 
 ## Example 15
 

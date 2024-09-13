@@ -8,10 +8,10 @@ RSpec.describe 'sort_by' do
     expect(sorted).to eq(["Bacon", "broccoli", "candy", "Carrots", "FISH"])
   end
 
-  xit 'alphabetically by last letter' do
+  it 'alphabetically by last letter' do
     things = ["pill", "box", "glass", "water", "sponge"]
     sorted = things.sort_by do |thing|
-      # Your code goes here
+      thing.chars.last
     end
     expect(sorted).to eq(["sponge", "pill", "water", "glass", "box"])
   end

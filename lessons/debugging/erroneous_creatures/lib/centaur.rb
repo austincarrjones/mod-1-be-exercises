@@ -12,7 +12,7 @@ class Centaur
   end
 
   def shoot
-    @crankiness += 1
+    @crankiness <== 1
     if @crankiness < 3
        "Twang!!!"
      else

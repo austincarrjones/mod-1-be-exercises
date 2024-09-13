@@ -1,5 +1,6 @@
 require 'rspec'
 require './lib/werewolf'
+require 'pry'
 
 RSpec.describe Werewolf do
   it 'has a name' do
@@ -50,11 +51,16 @@ RSpec.describe Werewolf do
   end
 
   it 'is not hungry by default' do
-    # your code here
+    werewolf = Werewolf.new('David')
+    expect(werewolf.hungry?).to be false
   end
 
   it 'becomes hungry after changing to a werewolf' do
-    # your code here
+    werewolf = Werewolf.new('David')
+    expect(werewolf.hungry?).to be false
+    werewolf.change!
+    expect(werewolf.hungry?).to be true
+  
   end
 
   class Victim
@@ -66,18 +72,23 @@ RSpec.describe Werewolf do
   end
 
   it 'consumes a victim' do
+    werewolf = Werewolf.new('David')
+    victim = Victom.new
+    
+    expect(victim.status).to equal :alive
+
+    
+  end
+
+  xit 'cannot consume a victim if it is in human form' do
     # your code here
   end
 
-  it 'cannot consume a victim if it is in human form' do
+  xit 'a werewolf that has consumed a human being is no longer hungry' do
     # your code here
   end
 
-  it 'a werewolf that has consumed a human being is no longer hungry' do
-    # your code here
-  end
-
-  it 'a werewolf who has consumed a victim makes the victim dead' do
+  xit 'a werewolf who has consumed a victim makes the victim dead' do
     # your code here
   end
 
