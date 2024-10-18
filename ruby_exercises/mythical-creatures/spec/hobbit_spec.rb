@@ -1,5 +1,6 @@
 require './spec/spec_helper'
 require './lib/hobbit'
+require 'pry'
 
 RSpec.describe Hobbit do
   it 'has a name' do
@@ -44,7 +45,7 @@ RSpec.describe Hobbit do
 
   it 'comes of age at 33' do
     hobbit = Hobbit.new('Otho')
-
+    binding.pry
     33.times do
       hobbit.celebrate_birthday
     end
